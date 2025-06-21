@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Background triangles -->
+  <polygon points="100,200 300,400 100,400" fill="url(#triangleGradient)" opacity="0.1"/>
+  <polygon points="1000,100 1100,300 900,300" fill="url(#triangleGradient)" opacity="0.1"/>
+  <polygon points="900,500 1100,600 900,600" fill="url(#triangleGradient)" opacity="0.1"/>
+  
+  <!-- Main triangle -->
+  <polygon points="600,150 900,450 300,450" fill="url(#triangleGradient)" filter="url(#glow)"/>
+  
+  <!-- Company name -->
+  <text x="600" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">TRIANGLES</text>
+  <text x="600" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="300" fill="#06b6d4">CONSOLIDATED LIMITED</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#9ca3af">Building the Future Across Every Dimension</text>
+  
+  <!-- Services -->
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">AI & IT • Real Estate • News & Media • Entertainment</text>
+</svg> 
